@@ -1,0 +1,8 @@
+; Kill Chain 4 Policy (Axiom)
+(t1595 recon res_dev computer_01 network_01)
+(t1584_005 res_dev init_access computer_01 network_01)
+(t1189 init_access cred_access computer_01)
+(t1203 attacker_01 user_acct_01 cred_access cc computer_01)
+(t1005 attacker_01 user_acct_01 cc cc computer_01)
+(t1001_002 attacker_01 user_acct_01 cc goal computer_01)
+; cost = 6 (unit cost)

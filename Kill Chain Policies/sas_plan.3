@@ -1,0 +1,8 @@
+; Kill Chain 3 Policy (APT29)
+(t1598 attacker_01 user_acct_01 recon res_dev)
+(t1586 user_acct_01 attacker_01 computer_01 res_dev init_access)
+(t1547_001_pers attacker_01 user_acct_01 computer_01 init_access exe)
+(t1547_001_pe attacker_01 computer_01 exploit_01 exe cred_access)
+(t1573 computer_01 exploit_01 cred_access lat_mov)
+(t1102 attacker_01 computer_01 lat_mov goal)
+; cost = 6 (unit cost)

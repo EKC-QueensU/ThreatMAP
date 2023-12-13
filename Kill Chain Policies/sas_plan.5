@@ -1,0 +1,8 @@
+;Kill Chain 5 Policy (Metador)
+(t1589_001 user_acct_01 attacker_01 recon res_dev)
+(t1583_001 domain_01 attacker_01 user_acct_01 res_dev init_access)
+(t1078 user_acct_01 attacker_01 computer_01 domain_01 init_access exe)
+(t1059_003 attacker_01 computer_01 exe cred_access)
+(t1068 attacker_01 computer_01 cred_access cc)
+(t1105 attacker_01 user_acct_01 computer_01 exploit cc goal)
+; cost = 6 (unit cost)
